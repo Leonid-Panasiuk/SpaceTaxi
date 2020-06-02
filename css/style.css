@@ -283,7 +283,7 @@ form {
 @media (max-width: 500px) {
 
     main {
-        height: 663px;
+        height: 640px;
     }
 
     .autocomplete {
@@ -380,4 +380,13 @@ form {
     main {
         height: 736px;
     }
+}
+
+@media only screen 
+    and (device-width : 414px) 
+    and (device-height : 736px) 
+    and (-webkit-device-pixel-ratio : 3) { 
+        main {
+       height: 663px;
+        }
 }
