@@ -1,7 +1,4 @@
-// $(window).on("scroll", function() {
-//     var s = Math.min(400, $(document).scrollTop()) + 100;
-//     $("img").width(s).height(s);
-// });
+
 
 let craters = ["Aristoteles", "Aratus", "Abbot",  "Bancroft", "Barnard", "Banachiewicz"];
 
