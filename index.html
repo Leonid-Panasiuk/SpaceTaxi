@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <title>SpaceTaxi</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">
+                <img src="img/rocket.svg" width="50" height="50" class="d-inline-block align-top" alt="Logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Замовлення таксі <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Служба підтримки</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Як стати водієм</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Як стати партнером</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+
+                    <button class="btn btn-dark my-2 my-sm-0 login-btn" type="submit">
+                        <img src="img/login.svg" alt="">
+                        Увійти</button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="forms-container">
+            <div class="cols-container">
+                <div class="forms-1">
+                    <div id="error-message">Заповніть всі поля</div>
+                    <div class="forms-1-container">
+                        <form autocomplete="off" id="form-control" action="#">
+                            <div class="autocomplete">
+                                <input class="from-form" id="from" type="text" placeholder="Звідки" required>
+
+                                <span class="input-location"></span>
+                                <input type="button" id="swap"></input>
+                                <input class="to-form" id="to" type="text" placeholder="Куди" required>
+                            </div>
+
+                    </div>
+                </div>
+                <div class="forms-2">
+                    <div class="forms-2-container">
+                        <select class="time-select">
+                            <option>На найближчий час</option>
+                            <option>Через 10 хвилин</option>
+                        </select>
+                        <select class="car-select" disabled>
+                            <option class="test">Вимоги</option>
+                        </select>
+                        <input type="text" placeholder="Телефон" required>
+                    </div>
+                </div>
+                <div class="forms-3-container">
+                    <a href="#">Тарифи</a>
+                    <a class="open-comment" href="#">Коментар до Замовлення</a>
+                </div>
+                <div class="comment-container">
+                    <textarea class="comment" type="text"></textarea>
+                </div>
+                <div class="line"></div>
+                <div class="forms-4-container">
+                    <select>
+                        <option>Економ від 30 грн</option>
+                    </select>
+                    <button id="submit-btn" type="submit" value="Submit" class="btn btn-warning">Викликати
+                        таксі</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="bottom-links">
+            <div class="links-container">
+                <nav class="nav">
+                    <ul>
+                        <li class="bottom-links-item">
+                            <a href="#">Про сервіс</a>
+                        </li>
+                        <li class="bottom-links-item">
+                            <a href="#">Тарифи</a>
+                        </li>
+                        <li class="bottom-links-item">
+                            <a href="#">Служби таксі</a>
+                        </li>
+                        <li class="bottom-links-item">
+                            <a href="#">Угода користувача</a>
+                        </li>
+                        <li class="bottom-links-item">
+                            <a href="#">Мобільна версія</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

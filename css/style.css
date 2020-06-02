@@ -1,0 +1,373 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: none !important;
+}
+
+/* NAVBAR */
+
+.navbar-brand img {
+    animation: spin 4s linear infinite;
+    margin-right: 65px !important;
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.nav-link {
+    transition: all .3s;
+}
+
+.nav-link:hover {
+    color: rgb(160, 66, 66) !important;
+}
+
+.login-btn img {
+    width: 30px;
+    height: 30px;
+}
+
+.login-btn:hover {
+    border: 1px solid #FFFFFF !important;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+
+/* MAIN */
+
+main {
+    background-image: url(../img/main-bg.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.forms-container {
+    max-width: 100%;
+    width: 642px;
+    padding: 18px 18px 0;
+    position: relative;
+}
+
+.forms-container select,
+input {
+    border-style: solid;
+    border-color: #cbcbcb;
+    border-width: 1px 1px;
+    padding-left: 5px;
+    outline: 0;
+}
+
+.forms-container select {
+    font-size: 13px;
+}
+
+::placeholder {
+    font-size: 13px;
+}
+
+.cols-container {
+    padding: 26px 24px 22px;
+    background: #FFFFFF;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, .1), 0 3px 4px -3px rgba(0, 0, 0, .3);
+}
+
+/* --------------------------------------------------------------------------------- */
+
+form {
+    display: flex;
+}
+
+.forms-1-container input {
+    width: 47%;
+    border-style: solid;
+    border-color: #cbcbcb;
+    border-width: 1px 1px;
+    padding-left: 5px;
+    outline: 0;
+    position: relative;
+}
+
+.forms-1-container input:first-child {
+    background-image: url(../img/target.svg);
+    background-repeat: no-repeat;
+    background-position: right 2px;
+    background-size: 30px 20px;
+}
+
+
+.forms-1-container input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #719ECE;
+    border: 1px solid #719ECE;
+}
+
+#swap {
+    background: url(../img/repeat.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 6%;
+    border-width: 1px 0;
+    border-style: solid;
+    border-color: #cbcbcb;
+    outline: 0;
+}
+
+#swap:focus {
+    box-shadow: 0 0 5px rgb(204, 206, 113);
+}
+
+.forms-1-container button:focus {
+    outline: none;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.forms-2-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.time-select {
+    width: 40%;
+}
+
+.car-select {
+    width: 30%;
+}
+
+.forms-2-container input {
+    width: 20%;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.forms-3-container {
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 13px;
+}
+
+.forms-3-container a {
+    font-size: 12px;
+    color: grey;
+    transition: all .3s;
+}
+
+.forms-3-container a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.comment {
+    display: none;
+}
+
+.comment-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.line {
+    position: relative;
+    background: #d8d8d8;
+    height: 1px;
+    margin: 20px -24px;
+}
+
+/* --------------------------------------------------------------------------------- */
+
+.forms-4-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.forms-4-container select {
+    width: 30%;
+}
+
+.forms-4-container option {
+    border: none;
+    outline: none;
+}
+
+
+/* --------------------------------------------------------------------------------- */
+
+
+/* Autocomplete */
+
+#error-message {
+    display: none;
+    color: red;
+    text-align: center;
+    margin-bottom: 12px;
+}
+
+.autocomplete {
+    position: relative;
+    display: flex;
+    width: 100%;
+}
+
+.autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
+
+.autocomplete-active {
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+}
+
+
+/* Bottom links */
+
+.bottom-links {
+   position: absolute;
+   bottom: -70px;
+   left: 25px;
+}
+
+.nav {
+    list-style: none;
+}
+
+.bottom-links-item {
+    display: inline-block;
+}
+
+.bottom-links-item a {
+    color: white;
+    margin-right: 12px;
+    transition: all .3s;
+    font-weight: 100;
+}
+
+.bottom-links-item a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+/* -----------------------------MEDIA------------------------------------ */
+
+@media (max-width: 500px) {
+
+    .autocomplete {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #form-control {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .forms-1-container input {
+        width: 70%;
+    }
+
+    #swap {
+        margin: 5px 0;
+        border-width: 1px 1px;
+        width: 70%;
+    }
+
+    .forms-2-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .time-select,
+    .car-select {
+        width: 70%;
+        margin: 10px;
+    }
+
+    .forms-2 input {
+        width: 70%;
+    }
+
+    .forms-container select {
+        font-size: 10px;
+    }
+
+    .forms-3-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .forms-4-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .forms-4-container button {
+        margin-top: 10px;
+    }
+
+    .forms-4-container select {
+        width: 55%;
+    }
+
+    .bottom-links {
+        position: static;
+    }
+
+    .bottom-links-item {
+        display: flex;
+    }
+
+    .links-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .bottom-links-item  a {
+        margin: 0 auto;
+        margin-top: 5px;
+    }
+}
