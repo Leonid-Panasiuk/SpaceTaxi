@@ -1,3 +1,4 @@
+
 let craters = ["Aristoteles", "Aratus", "Abbot",  "Bancroft", "Barnard", "Banachiewicz"];
 
 function autocomplete(input, list) {
