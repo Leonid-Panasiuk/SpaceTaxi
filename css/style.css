@@ -282,6 +282,10 @@ form {
 
 @media (max-width: 500px) {
 
+    main {
+        height: 100%;
+    }
+
     .autocomplete {
         display: flex;
         flex-direction: column;
